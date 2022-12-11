@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Body Mass Index Calculator Website</title>
+    </head>
+
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background: url(../Assets/engin-akyurt-HEMIBJ8QQuA-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            position: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar{
+            width: 90%;
+            height: 15vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            width: 100px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        #services .container1{
+            flex-direction: column;
+            text-align: center;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        #services .service-title{
+            font-size: 3rem;
+            font-weight: 300;
+            font-family: 'Raleway', sans-serif;
+            color:yellow;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            text-align: center;
+        }
+        #services .service-title span{
+            color: black;
+        }
+        #services .service-top p{
+            font-size: 1rem;
+            font-family: 'Raleway', sans-serif;
+            margin-top: 5px;
+            line-height: 1.5rem;
+            font-weight: 300;
+            letter-spacing: .05rem;
+        }
+        .hero-section{
+            align-items: center;
+            display: flex;
+            min-height: 60vh;
+            justify-content: center;
+        }
+
+        .card-grid{
+            display: inline-flex;
+            grid-column-gap: 40px;
+        }
+
+        .card{
+            position: relative;
+            width: 300px;
+            height: 450px;
+            transition: 0.8s ease-in-out;
+            border-radius: 20px;
+            
+        }
+
+        .card:hover{
+            box-shadow: 2px 30px 30px rgba(0,0,0,0.5);
+        }
+
+        .card-background{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+            transform-origin: center;
+            transform: scale(1) translateZ(0);
+            transition: filter 200ms linear , transform 200ms linear;
+            filter: brightness(0.75) saturate(1.2) contrast(0.85);
+        }
+        .card-content{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 24px;
+        }
+
+        .card-heading{
+            color: #fff;
+            font-size: 1.9rem;
+            line-height: 1.4;
+            width: 80%;
+        }
+
+        .card-category{
+            position: absolute;
+            left: 35%;
+            top: 14em;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .card:hover .card-background{
+            transform: scale(1.05) translateZ(0);
+        }
+
+        .card-grid:hover > .card:not(:hover) , .card-content:not(:hover) .card-background{
+            filter: brightness(0.8) saturate(1) contrast(1.2) blur(10px);
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="../Src/HomePage.html"><img src="../Assets/image-removebg-preview (3).png" class="logo" ></a>
+            </div>
+
+            <section id="services">
+                <div class="container1">
+                    <div class="service-top">
+                        <h1 class="service-title">Body Mass Index <span>Calculator</span></h1>
+                        <p>Hello and welcome to the College of Information and Communication Technology's Body Mass Calculator website (CICT). I'd like you to choose or choose how you will calculate your BMI.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero-section">
+                <div class="card-grid">
+                    <a class="card" href="../Src/MetricSystem.html">
+                        <div class="card-background" style="background-image: url(../Assets/elisa-michelet-b4EsL48DIK0-unsplash.jpg);"></div>
+                        <div class="card-content">
+                            <h3 class="card-heading">Metric System</h3>
+                            <p class="card-category">MS</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="../Src/ImperialSystem.html">
+                        <div class="card-background" style="background-image: url(../Assets/jennifer-burk-ECXB0YAZ_zU-unsplash.jpg);"></div>
+                        <div class="card-content">
+                            <h3 class="card-heading">Imperial System</h3>
+                            <p class="card-category">IS</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            
+            </section>
+
+        </div>
+    </body>
+</html>

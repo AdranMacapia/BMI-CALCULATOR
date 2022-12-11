@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator Website</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(../Assets/engin-akyurt-HEMIBJ8QQuA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+    }
+
+    .navbar {
+
+        width: 90%;
+        height: 15vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+        margin-top: 20px;
+
+    }
+
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px 2px;
+    }
+
+    nav ul li a:hover {
+        color: black;
+
+    }
+
+    .container1 {
+        display: grid;
+        place-items: center;
+    }
+
+    .images{
+            width: 50%;
+            height: 85%;
+            position: absolute;
+            bottom: 0px;
+            right: 100px;
+        }
+        .images .picture{
+            width: 150%;
+            height: 80%;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+        .images img{
+            height: 100%;
+            position: absolute;
+            left: auto;
+            right: auto;
+            bottom: 0;
+        }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../Src/HomePage.html"><img src="../Assets/image-removebg-preview (3).png" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../Src/Nutrition.html">GUIDE</a></li>
+                    <li><a href="../Src/LastPage.html">LOGOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container1">
+            <div class="images">
+                <img src="../Assets/bmin.jpg" class="picture">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

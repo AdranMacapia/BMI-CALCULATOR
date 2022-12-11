@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator Website</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(../Assets/engin-akyurt-HEMIBJ8QQuA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+    }
+
+    .navbar {
+
+        width: 90%;
+        height: 15vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+        margin-top: 20px;
+
+    }
+
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px 2px;
+    }
+
+    nav ul li a:hover {
+        color: black;
+
+    }
+
+    #services .container1 {
+        flex-direction: column;
+        text-align: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    #services .service-title {
+        font-size: 3rem;
+        font-weight: 300;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        margin-top: -30px;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        text-align: center;
+    }
+
+    #services .service-title span {
+        color: rgb(252, 71, 71);
+        text-decoration: rgb(252, 71, 71);
+    }
+
+    .container2 {
+        display: grid;
+        place-items: center;
+    }
+
+    table {
+        width: 800px;
+        box-shadow: -1px 12px 12px -6px rgba(0, 0, 0, 0.5);
+    }
+
+    table,
+    td,
+    th {
+        padding: 20px;
+        border: 1px solid rgb(0, 0, 0);
+        color: black;
+    }
+
+    td {
+        font-size: 18px;
+    }
+
+    th {
+        background-color: lightgreen;
+    }
+
+    tr {
+        background-color: rgb(124, 223, 146);
+    }
+
+    h1 {
+        padding-top: 40px;
+        color: rgb(160, 24, 24);
+    }
+
+    .photo {
+        height: 20vh;
+        width: 25vh;
+        padding-left: 10%;
+    }
+
+    .btn {
+        background: linear-gradient(90deg, rgb(190, 204, 179) 0%, rgb(142, 175, 132) 35%, rgb(110, 182, 131) 100%);
+        margin-top: 10px;
+        margin-left: 700px;
+        border-radius: 10px;
+        padding: 15px 15px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        box-shadow: rgb(66, 63, 63);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../Src/HomePage.html"><img src="../Assets/image-removebg-preview (3).png" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../Src/Nutrition.html">GUIDE</a></li>
+                    <li><a href="../Src/LastPage.html">LOGOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="services">
+            <div class="container1">
+                <div class="service-top">
+                    <h1 class="service-title">You're <span>Underweight?</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="container2">
+            <table>
+                <tr>
+                    <th> Recommended food intake</th>
+                    <th>Food to Avoid</th>
+                    <th>Things to do</th>
+                </tr>
+                <tr>
+                    <td>Choose Nutrients-rich Foods.<img src="../Assets/n.jpg" class="photo"></td>
+                    <td>Avoid foods with a lot of added sugar.<img src="../Assets/sweetsC.jpg" class="photo"></td>
+                    <td>Eat more frequently.</td>
+                </tr>
+                <tr>
+                    <td>Try healthy Smoothies.<img src="../Assets/s.jpg" class="photo"></td>
+                    <td>A lot of fat and salt</td>
+                    <td> Watch when you drink.</td>
+                </tr>
+                <tr>
+                    <td>Basing meals on starchy carbohydrates.<img src="../Assets/st.jpg" class="photo"></td>
+                    <td>Takeaway foods and sugary drinks.<img src="../Assets/sweetsC.jpg" class="photo"></td>
+                    <td>Make every bite count.</td>
+                </tr>
+                <tr>
+                    <td>Having some dairy or dairy alternatives.<img src="../Assets/d.jpg" class="photo"></td>
+                    <td></td>
+                    <td>Top it off, add extra to your dishes for more calories.</td>
+
+                </tr>
+                <tr>
+                    <td> Eat some foods with protein.<img src="../Assets/p.jpg" class="photo"></td>
+                    <td></td>
+                    <td>exercise may also stimulate your appetite.</td>
+                </tr>
+            </table>
+
+            <button class="btn" onclick="history.back()">Go Back</button>
+        </div>
+    </div>
+</body>
+
+</html>
